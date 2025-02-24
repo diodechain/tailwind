@@ -260,6 +260,7 @@ defmodule Tailwind do
       {{:unix, :freebsd}, "aarch64", 64} -> "freebsd-arm64"
       {{:unix, :freebsd}, "amd64", 64} -> "freebsd-x64"
       {{:unix, :linux}, "aarch64", 64} -> "linux-arm64"
+      {{:unix, :linux}, "aarch64", 32} -> "linux-armv7"
       {{:unix, :linux}, "arm", 32} -> "linux-armv7"
       {{:unix, :linux}, "armv7" <> _, 32} -> "linux-armv7"
       {{:unix, _osname}, arch, 64} when arch in ~w(x86_64 amd64) -> "linux-x64"
